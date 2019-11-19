@@ -2,6 +2,7 @@
 
 Sistema de Eventos encomendado pela Morena.
 [![Build Status](https://travis-ci.org/asfelix/eventex.svg?branch=master)](https://travis-ci.org/asfelix/eventex)
+[![CodeFactor](https://www.codefactor.io/repository/github/asfelix/eventex/badge)](https://www.codefactor.io/repository/github/asfelix/eventex)
 
 ## Como desenvolver?
 
