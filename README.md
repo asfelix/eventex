@@ -9,7 +9,7 @@ Sistema de Eventos encomendado pela Morena.
 
 1. Clone o repositório.
 2. Crie um virtualenv com Python 3.8
-3. Ative o seu virtualenv
+3. Ative o seu virtualenv.
 4. Instale as dependências.
 5. Configure a instância com o .env
 6. Execute os testes.
