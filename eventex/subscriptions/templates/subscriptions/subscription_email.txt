@@ -1,4 +1,4 @@
-Olá! Tudo bem?
+Olá, {{ name }}! Tudo bem?
 
 Muito obrigada por se inscrever no Eventex.
 
