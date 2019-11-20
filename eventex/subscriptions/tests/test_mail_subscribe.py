@@ -5,7 +5,7 @@ from django.test import TestCase
 class SubscribePostValid(TestCase):
     def setUp(self):
         data = dict(name='Alexsandro Felix', cpf='12345678901',
-                    email='felix@mail.com', phone='45-99999-9999')
+                    email='eventex.to@ffelix.eti.br', phone='45-99999-9999')
         self.client.post('/inscricao/', data)
         self.email = mail.outbox[0]
 
@@ -15,12 +15,12 @@ class SubscribePostValid(TestCase):
         self.assertEqual(expect, self.email.subject)
 
     def test_subscription_email_from(self):
-        expect = 'eventex@mailinator.com'
+        expect = 'eventex.from@ffelix.eti.br'
 
         self.assertEqual(expect, self.email.from_email)
 
     def test_subscription_email_to(self):
-        expect = ['eventex@mailinator.com', 'felix@mail.com']
+        expect = ['eventex.from@ffelix.eti.br', 'eventex.to@ffelix.eti.br']
 
 
         self.assertEqual(expect, self.email.to)
@@ -29,7 +29,7 @@ class SubscribePostValid(TestCase):
         contents = [
             'Alexsandro Felix',
             '12345678901',
-            'felix@mail.com',
+            'eventex.to@ffelix.eti.br',
             '45-99999-9999'
         ]
 
